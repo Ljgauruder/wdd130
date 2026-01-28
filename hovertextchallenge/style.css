@@ -1,0 +1,49 @@
+h1.title-text {
+    color: white;
+    font: bold 40px Arial;
+    text-align: center;
+}
+
+h1.title-text:hover {
+    color: black;
+}
+
+h4 {
+    color: white;
+    font: times new roman;
+    text-align: center;
+}
+
+h3.quote-source {
+    color: white;
+    font: bold 20px arial;
+    text-align: center;
+}
+
+h3.list {
+    color: black;
+    font: bold 20px arial;
+    text-align: left;
+    display: block;
+}
+
+img {
+    text-align: center;
+    display: block;
+}
+
+h1.atonement-quote {
+    color: white;
+    font: times new roman;
+    text-align: center;
+}
+
+h3.russell-m-nelson {
+    color: black;
+    font: 20px arial;
+    text-align: center;
+}
+
+body {
+    background-color: aqua;
+}
