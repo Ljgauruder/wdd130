@@ -235,6 +235,8 @@ main section img {
     grid-row: 2/3;
 }
 
+/*Smaller Devices*/
+
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
