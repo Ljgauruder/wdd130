@@ -56,12 +56,14 @@ nav a:hover {
 
 #hero-msg h1 {
     text-align: center;
-    color: #b2ebf2;
+    color: #46e9ff;
+    text-shadow: #212529 1px 1px 0, #212529 -1px -1px 0, #212529 -1px 1px 0, #212529 1px -1px 0;
 }
 
 #hero-msg h2 {
     text-align: center;
-    color: white;
+    color: rgb(255, 136, 0);
+    text-shadow: #212529 1px 1px 0, #212529 -1px -1px 0, #212529 -1px 1px 0, #212529 1px -1px 0;
 }
 
 .button-box {
@@ -69,7 +71,7 @@ nav a:hover {
 }
 
 .home-title {
-    color: #004d40;
+    color: #197767;
 }
 
 main {
@@ -238,7 +240,7 @@ main section img {
 /*Smaller Devices*/
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .rivers-grid, .background-grid {
         display: block;
         height: auto;
     }
@@ -264,10 +266,12 @@ main section img {
     .home-title {
         font-size: 25px;
     }
-    .rivers-card, .camping-card, .rapids-card { 
+
+    .rivers-card, .camping-card, .rapids-card, .river { 
         margin: 50px auto;
         width: 60%;
     }
+    
     #background {
         display: none;
     }
@@ -279,4 +283,104 @@ main section img {
     footer {
         margin-top: 25px;
     }
+}
+
+/*Rivers Page*/
+.rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.intro {
+    grid-column: 2/10;
+    grid-row: 1/2;
+    text-align: center;
+    padding: 2em;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
+.river {
+    margin: 80px 0 180px;
+    padding: 30px 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+    text-align: left;
+}
+
+.river:hover {
+    transform: scale(1.03);
+}
+
+.river h2 {
+    color: #004d40;
+    margin: 15px 0 20px;
+    text-align: center;
+}
+
+.salmon-card { grid-column: 2/4; grid-row: 2/3; }
+.green-card  { grid-column: 5/7; grid-row: 2/3; }
+.grand-card  { grid-column: 8/10; grid-row: 2/3; }
+
+.river .card-img {
+    width: 100%;
+    border: 10px solid #00251a;
+    border-radius: 5px;
+}
+
+.river .icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#background {
+    height: 725px;
+    grid-column: 1/11;
+    grid-row: 4/9;
+    background-color: #b2ebf2;
+}
+
+.river p {
+    text-align: left;
+    line-height: 1.65;
+    font-size: 1.05rem;
+    margin-bottom: 1.4em;
+    color: #212529;
+}
+
+/* background grid section (because the background section is having issues on smaller devices) */
+.background-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.background-grid #background {
+    height: 725px;
+    grid-column: 1/11;
+    grid-row: 1/6;
+    background-color: #b2ebf2;
+}
+
+.background-grid .mountains {
+    grid-column: 2/7;
+    grid-row: 2/5;
+    width: 100%;
+    border: 10px solid #00251a;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.background-grid .msg {
+    background-color: #004d40;
+    line-height: 1.5em;
+    grid-column: 6/10;
+    grid-row: 4/5;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.rivers-grid .background-grid {
+    grid-column: 1/11;
+    grid-row: 4/5;
 }
