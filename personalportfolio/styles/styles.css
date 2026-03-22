@@ -159,7 +159,7 @@ nav ul a:hover {
 }
 
 /* SECTIONS */
-.about-section, .cards-section, .faq-section {
+.about-section, .cards-section, .faq-section, .showcase-section {
     padding: 4rem 2rem;
 }
 
@@ -234,6 +234,21 @@ h2, h3 {
 .faq-item h4 {
     color: var(--accent1-color);
     margin-bottom: 0.8rem;
+}
+
+/* SHOWCASE GALLERY */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.showcase-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
