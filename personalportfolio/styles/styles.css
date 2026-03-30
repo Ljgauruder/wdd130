@@ -118,8 +118,6 @@ nav ul a:hover {
     margin-bottom: 1rem;
 }
 
-/* BUTTONS */
-
 .hero-buttons {
     margin-top: 2rem;
     display: flex;
@@ -159,7 +157,8 @@ nav ul a:hover {
 }
 
 /* SECTIONS */
-.about-section, .cards-section, .faq-section, .showcase-section {
+.about-section, .cards-section, .faq-section,
+.features-section, .showcase-section, .contact-section {
     padding: 4rem 2rem;
 }
 
@@ -236,6 +235,27 @@ h2, h3 {
     margin-bottom: 0.8rem;
 }
 
+/* FEATURES GRID */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.feature-item {
+    text-align: center;
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
 /* SHOWCASE GALLERY */
 .showcase-grid {
     display: grid;
@@ -249,6 +269,56 @@ h2, h3 {
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* CONTACT SECTION */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-form label {
+    display: block;
+    margin: 1rem 0 0.3rem;
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.contact-image {
+    position: relative;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.resume-preview {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(255,255,255,0.95);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
 }
 
 /* FOOTER */
